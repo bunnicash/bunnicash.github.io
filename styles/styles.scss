@@ -1,4 +1,4 @@
-// General
+// General Properties
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@
     --color-links: #959297;
     --color-white: #FFFFFF;
     --color-black: #000;
-    --color-grey0: #f8f8f8;
+    --color-grey-0: #f8f8f8;
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
     --color-grey-3: #6c7983;
@@ -20,6 +20,7 @@
     --color-grey-5: #2a2e35;
     --color-grey-6: #1b2225;
     --color-header: #12181b;
+    --color-space: #1e2325;
 }
 
 .light-mode {
@@ -28,7 +29,7 @@
     --color-links: #959297;
     --color-white: #000000;
     --color-black: rgb(231, 222, 222);
-    --color-grey0: #f8f8f8;
+    --color-grey-0: #f8f8f8;
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
     --color-grey-3: #6c7983;
@@ -36,6 +37,7 @@
     --color-grey-5: #2a2e35;
     --color-grey-6: #3c4247;
     --color-header: #12181b;
+    --color-space: #1e2325;
 }
 
 a{
@@ -54,12 +56,12 @@ body{
 }
 
 .space-item {
-    // spacer, remove soon
+    // spacer...
     padding-top: 10rem;
 }
 
 
-// Content list
+// Content list (toc)
 .contents {
     display: fixed;
     margin: auto;
@@ -113,7 +115,7 @@ body{
         p {
             span {
                 font-weight: bold;
-                padding-right: 1rem;
+                padding-right: .6rem;
             }
             a {
                 color: var(--color-grey-3);
@@ -156,22 +158,9 @@ body{
 .topnav a {
     color: var(--color-grey-1);
     text-align: center;
-    padding: 8px 16px;
-    text-decoration: none;
+    padding: 8px 10px;
     font-size: 14px;
     font-weight: bold;
-    padding-left: .50%;
-    padding-right: .50%;
-    min-width: 30px;
-    .fa-discord {
-        color: #9063f8;
-    }
-    .fa-patreon {
-        color: #c93f3f;
-    } 
-    .fa-twitter {
-        color: #44a9c2;
-    }
     .main {
         color: var(--color-secondary);
     }
@@ -183,7 +172,7 @@ body{
 }
 
 .topnav .space {
-    color: var(--color-grey-6);
+    color: var(--color-space);
     padding: .8rem;
     min-width: 20px;
 }
@@ -228,6 +217,9 @@ body{
     .fab {
         color: var(--color-grey-2);
     }
+    .fas {
+        color: var(--color-grey-2);
+    }
 }
   
 .footer-dark .item.social > a:hover {
@@ -245,7 +237,7 @@ body{
 }
 
 
-// Media Scroller
+// Index: Galleries
 .media-scroller {
     --_spacer: 6px;
     display: grid;
@@ -267,7 +259,7 @@ body{
     background: var(--color-grey-6);
     border-radius: 2%;
     .title {
-        color: var(--color-grey0);
+        color: var(--color-grey-0);
     }
 }
   
@@ -287,3 +279,19 @@ body{
 }
   
 
+// Downloads: Table
+.table-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    table, th, td {
+        text-align: left;
+        margin: auto;
+        max-width: 1350px;
+        border-bottom: 1px solid var(--color-grey-5);
+        border-collapse: collapse;
+        th {
+            width: 400px;
+            color: var(--color-secondary);
+        }
+    }
+}

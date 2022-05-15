@@ -21,6 +21,7 @@
     --color-grey-6: #1b2225;
     --color-header: #12181b;
     --color-space: #1e2325;
+    --color-table: #1b2225;
 }
 
 .light-mode {
@@ -38,6 +39,7 @@
     --color-grey-6: #3c4247;
     --color-header: #12181b;
     --color-space: #1e2325;
+    --color-table: #b2becd;
 }
 
 a{
@@ -281,17 +283,28 @@ body{
 
 // Downloads: Table
 .table-container {
+    padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     table, th, td {
         text-align: left;
         margin: auto;
-        max-width: 1350px;
-        border-bottom: 1px solid var(--color-grey-5);
+        max-width: 1335px;
         border-collapse: collapse;
         th {
             width: 400px;
-            color: var(--color-secondary);
+            font-weight: normal;
+        }
+        td {
+            a {
+                padding-right: .6rem;
+            }
+        }
+        .light {
+            background-color: var(--color-table);
+        }
+        .commit {
+            color: #5b7cb6;
         }
     }
 }

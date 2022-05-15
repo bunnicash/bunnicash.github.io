@@ -21,6 +21,7 @@
   --color-grey-6: #1b2225;
   --color-header: #12181b;
   --color-space: #1e2325;
+  --color-table: #1b2225;
 }
 
 .light-mode {
@@ -38,6 +39,7 @@
   --color-grey-6: #3c4247;
   --color-header: #12181b;
   --color-space: #1e2325;
+  --color-table: #b2becd;
 }
 
 a {
@@ -300,6 +302,7 @@ body {
 }
 
 .table-container {
+  padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -307,13 +310,24 @@ body {
 .table-container table, .table-container th, .table-container td {
   text-align: left;
   margin: auto;
-  max-width: 1350px;
-  border-bottom: 1px solid var(--color-grey-5);
+  max-width: 1335px;
   border-collapse: collapse;
 }
 
 .table-container table th, .table-container th th, .table-container td th {
   width: 400px;
-  color: var(--color-secondary);
+  font-weight: normal;
+}
+
+.table-container table td a, .table-container th td a, .table-container td td a {
+  padding-right: .6rem;
+}
+
+.table-container table .light, .table-container th .light, .table-container td .light {
+  background-color: var(--color-table);
+}
+
+.table-container table .commit, .table-container th .commit, .table-container td .commit {
+  color: #5b7cb6;
 }
 /*# sourceMappingURL=styles.css.map */

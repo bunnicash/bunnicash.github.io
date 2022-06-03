@@ -20,7 +20,7 @@
     --color-grey-5: #2a2e35;
     --color-grey-6: #1b2225;
     --color-header: #12181b;
-    --color-space: #1e2325;
+    --color-space: #2c3133;
     --color-table: #1b2225;
 }
 
@@ -38,7 +38,7 @@
     --color-grey-5: #2a2e35;
     --color-grey-6: #3c4247;
     --color-header: #12181b;
-    --color-space: #1e2325;
+    --color-space: #2c3133;
     --color-table: #b2becd;
 }
 
@@ -115,13 +115,18 @@ body{
             color: var(--color-grey-3);
         }
         p {
-            span {
-                font-weight: bold;
-                padding-right: .6rem;
-            }
-            a {
+            padding-bottom: 1rem;
+        }
+        a {
+            padding-bottom: .25rem;
+            i {
                 color: var(--color-grey-3);
-                padding-right: .5rem;
+            }
+            span {
+                color: var(--color-grey-3);
+                font-weight: bold;
+                padding-left: .5rem;
+                padding-right: 1rem;
             }
         }
     }
